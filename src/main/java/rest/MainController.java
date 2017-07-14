@@ -20,7 +20,7 @@ public class MainController {
 	private UsuariosRepository usuariosRepository;
 	private TimeCoracaoRepository timeCoracaoRepository;
 
-	@GetMapping(path="/add") // Map ONLY GET Requests
+	@GetMapping(path="/createUser") // Map ONLY GET Requests
 	public @ResponseBody String addNewUser (@RequestParam String nomeCompleto
 			, @RequestParam String email) {
 		// @ResponseBody means the returned String is the response, not a view name
@@ -33,15 +33,14 @@ public class MainController {
 		return "Saved";
 	}
 
-	@GetMapping(path="/all")
+	@GetMapping(path="/listAllUsers")
 	public @ResponseBody Iterable<Usuarios> getAllUsers() {
 		// This returns a JSON or XML with the users
 		return usuariosRepository.findAll();
 	}
 
-	@GetMapping(path="/createTime")
+	@GetMapping(path="/createTimeCoracao")
 	public @ResponseBody String createNewTime(@RequestParam String nomeTime){
-
 		TimeCoracao tc = new TimeCoracao();
 		tc.setNomeTime(nomeTime);
 		System.out.print(tc.toString());

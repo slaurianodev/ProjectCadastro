@@ -8,8 +8,8 @@ import java.util.Date;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
-@Entity 
-@Table(name="time_coracao")
+@Entity
+@Table(name="timecoracao")
 public class TimeCoracao {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
