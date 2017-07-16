@@ -2,6 +2,7 @@
 API para cadastro de usuarios e campanhas
 
 ## Estrutura do Projeto
+## Passo-a-passo(#passos)
 
 == Pre-requisitos
 JDK 1.8
@@ -33,7 +34,7 @@ Disponivel nos endpoints: rest-user, rest-campanhas, rest-campanhas-usuarios, re
 DELETE - para exclusão de cadastros
 Disponivel nos endpoints: rest-user, rest-campanhas, rest-campanhas-usuarios
 
-== Passo-a-passo para compilação e execução da aplicação
+## Passo-a-passo para compilação e execução da aplicação(#passos)
 Instalar e/ou atualizar os frameworks e sistemas informados no itens Pre-requisitos
 
 Baixar o codigo fonte disponibilizado no Github
