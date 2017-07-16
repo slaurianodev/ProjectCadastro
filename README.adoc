@@ -1,6 +1,8 @@
 # ProjectCadastro
 API para cadastro de usuarios e campanhas
 
+Estrutura do Projeto
+
 == Pre-requisitos
 JDK 1.8
 MySQL 5.5+
@@ -41,3 +43,6 @@ Executar o comando para realizar o build da aplicação: gradle build
 Executar o comando para executar a aplicação: java -jar build/libs/rest-cad-usuarios-campanhas-1.0.0.jar
 
 == O que falta fazer (TODO)
+- Criar uma melhor maneira para a consulta dos cadastros
+- Implementar casos de teste
+-
