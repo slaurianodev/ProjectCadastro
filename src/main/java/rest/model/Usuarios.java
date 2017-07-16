@@ -1,4 +1,4 @@
-package rest.db;
+package rest.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,15 +8,20 @@ import java.util.Date;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
+
 @Entity
 @Table(name="usuarios")
 public class Usuarios {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer idUser;
+    private long idUser;
+    @NotNull
     private String nomeCompleto;
+    @NotNull
     private String email;
+    @NotNull
     private Date dataNascimento;
+    @NotNull
     private Integer idTimeCoracao;
 
 
@@ -25,17 +30,10 @@ public class Usuarios {
 	* Returns value of idUser
 	* @return
 	*/
-	public Integer getIdUser() {
+	public long getIdUser() {
 		return idUser;
 	}
 
-	/**
-	* Sets new value of idUser
-	* @param
-	*/
-	public void setIdUser(Integer idUser) {
-		this.idUser = idUser;
-	}
 
 	/**
 	* Returns value of nomeCompleto

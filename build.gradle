@@ -17,7 +17,7 @@ jar {
     version =  '1.0.0'
     manifest {
         attributes(
-            'Main-Class':'rest.Application'
+            'Main-Class':'rest.principal.Application'
         )
     }
 }

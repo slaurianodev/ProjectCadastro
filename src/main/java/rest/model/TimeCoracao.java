@@ -1,4 +1,4 @@
-package rest.db;
+package rest.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,12 +13,12 @@ import javax.validation.constraints.NotNull;
 public class TimeCoracao {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer idTime;
+    private long idTime;
 
     @NotNull
     private String nomeTime;
 
-	public Integer getIdTime() {
+	public long getIdTime() {
 		return idTime;
 	}
 
