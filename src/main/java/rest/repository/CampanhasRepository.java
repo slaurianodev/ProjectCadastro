@@ -8,6 +8,4 @@ import rest.model.Campanhas;
 
 public interface CampanhasRepository extends CrudRepository<Campanhas, Long> {
 
-  List<Campanhas> findAllByDataFim(Date dataFim);
-
 }

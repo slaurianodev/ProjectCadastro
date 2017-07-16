@@ -75,7 +75,7 @@ public class Campanhas {
 	* Returns value of data_inicio
 	* @return
 	*/
-	public Date getData_inicio() {
+	public Date getDataInicio() {
 		return dataInicio;
 	}
 

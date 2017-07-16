@@ -45,18 +45,7 @@ public class CampanhasController {
 	@PostMapping(path="/createNewCampanha")
 	public ResponseEntity createNewCampanha(@RequestBody Campanhas campanha){
 
-			Campanhas camp = campanha;
-
 			try{
-				System.out.println(camp.getDataFim());
-				List<Campanhas> listCampanhas = campanhasRepository.findAllByDataFim(campanha.getDataFim());
-				if(listCampanhas.size()>0){
-					System.out.println(listCampanhas.size());
-				}
-				for(Campanhas cp : listCampanhas){
-					System.out.println(cp.getNomeCampanha());
-				}
-
 				campanhasRepository.save(campanha);
 				return new ResponseEntity("Campanha cadastrada com sucesso! ;)" + campanha.getDataFim(), HttpStatus.OK);
 			}catch(Exception ex){
@@ -65,32 +54,33 @@ public class CampanhasController {
 
 	}
 
-	// @PutMapping(path="/updateUser/{id}")
-	// public ResponseEntity updateUser(@PathVariable Long id,@RequestBody Campanhas user) {
-	//
-	// 	Campanhas userOld = null;
-	//
-	// 	if(!campanhasRepository.exists(id)){
-	// 		return new ResponseEntity("Usuario nao encontrado :(.\n ID informado: " + id, HttpStatus.NOT_FOUND);
-	// 	} else {
-	// 		userOld = campanhasRepository.findOne(id);
-	// 		userOld.setNomeCompleto(user.getNomeCompleto());
-	// 		userOld.setEmail(user.getEmail());
-	// 		userOld.setDataNascimento(user.getDataNascimento());
-	// 		userOld.setIdTimeCoracao(user.getIdTimeCoracao());
-	// 	}
-	//
-	// 	try{
-	// 		campanhasRepository.save(userOld);
-	// 		return new ResponseEntity("Usuario atualizado com sucesso! ;)", HttpStatus.OK);
-	// 	}catch(Exception ex){
-	// 		return new ResponseEntity("Ocorreu um erro a atualizar o usuario. :( \n" + ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
-	// 	}
-	//
-	// }
+	@PutMapping(path="/updateUser/{id}")
+	public ResponseEntity updateCampanha(@PathVariable Long id,@RequestBody Campanhas campanha) {
+
+		Campanhas campanhaOld = null;
+
+		if(!campanhasRepository.exists(id)){
+			return new ResponseEntity("Campanha nao encontrada :(.\n ID informado: " + id, HttpStatus.NOT_FOUND);
+		} else {
+			campanhaOld = campanhasRepository.findOne(id);
+			campanhaOld.setNomeCampanha(campanha.getNomeCampanha());
+			campanhaOld.setIdTimeCoracao(campanha.getIdTimeCoracao());
+			campanhaOld.setDataInicio(campanha.getDataInicio());
+			campanhaOld.setDataFim(campanha.getDataFim());
+
+		}
+
+		try{
+			campanhasRepository.save(campanhaOld);
+			return new ResponseEntity("Campanha atualizada com sucesso! ;)", HttpStatus.OK);
+		}catch(Exception ex){
+			return new ResponseEntity("Ocorreu um erro a atualizar a campanha. :( \n" + ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+
+	}
 
 	@DeleteMapping(path="/deleteCampanha/{id}")
-	public ResponseEntity deleteUser(@PathVariable Long id) {
+	public ResponseEntity deleteCampanha(@PathVariable Long id) {
 
 		try{
 			campanhasRepository.delete(id);
