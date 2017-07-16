@@ -1,6 +1,9 @@
 # ProjectCadastro
 API para cadastro de usuarios e campanhas
 
+[Pre-requisitos]
+[Estrutura]
+
 # Pre-requisitos
 JDK 1.8
 MySQL 5.5+
@@ -31,7 +34,7 @@ Disponivel nos endpoints: rest-user, rest-campanhas, rest-campanhas-usuarios, re
 DELETE - para exclusão de cadastros
 Disponivel nos endpoints: rest-user, rest-campanhas, rest-campanhas-usuarios
 
-# Passo-a-passo para compilação e execução da aplicação(#passos)
+# Passo-a-passo para compilação e execução da aplicação
 1) Instalar e/ou atualizar os frameworks e sistemas informados no itens Pre-requisitos
 
 2) Baixar o codigo fonte disponibilizado no Github
