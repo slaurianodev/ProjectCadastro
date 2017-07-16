@@ -31,7 +31,7 @@ Disponivel nos endpoints: rest-user, rest-campanhas, rest-campanhas-usuarios, re
 DELETE - para exclusão de cadastros
 Disponivel nos endpoints: rest-user, rest-campanhas, rest-campanhas-usuarios
 
-#Passo-a-passo para compilação e execução da aplicação(#passos)
+# Passo-a-passo para compilação e execução da aplicação(#passos)
 1) Instalar e/ou atualizar os frameworks e sistemas informados no itens Pre-requisitos
 
 2) Baixar o codigo fonte disponibilizado no Github
@@ -43,6 +43,6 @@ WARNING: atualizar o arquivo application.properties da pasta src/main/resouser a
 
 5) Executar o comando para executar a aplicação: java -jar build/libs/rest-cad-usuarios-campanhas-1.0.0.jar
 
-#O que falta fazer (TODO)
+# O que falta fazer (TODO)
 - Criar uma melhor maneira para a consulta dos cadastros
 - Implementar casos de teste
