@@ -1,7 +1,7 @@
 # ProjectCadastro
 API para cadastro de usuarios e campanhas
 
-Estrutura do Projeto
+## Estrutura do Projeto
 
 == Pre-requisitos
 JDK 1.8
@@ -10,7 +10,7 @@ Spring Boot 1.5.3
 Gradle 2.3+
 Maven 3.0+
 
-== Estrutura do Projeto
+== Estrutura do Projeto(#estrutura)
 O Projeto está estruturado para prover uma API para o controle de cadastro (CRUD) de usuarios e campanhas.
 
 Os endpoints disponiveis no projeto hoje são:
