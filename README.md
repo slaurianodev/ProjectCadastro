@@ -1,12 +1,13 @@
 # ProjectCadastro
 API para cadastro de usuarios e campanhas
 
-# Pre-requisitos
+[Estrutura do Projeto](#estrutura-do-projeto)
+
+## Pre-requisitos
 * JDK 1.8
 * MySQL 5.5+
-* Spring Boot 1.5.3
 * Gradle 2.3+
-* Maven 3.0+
+* Maven 3.0+  
 
 # Estrutura do Projeto
 O Projeto está estruturado para prover uma API para o controle de cadastro (CRUD) de usuarios e campanhas.
@@ -31,19 +32,19 @@ Disponivel nos endpoints: rest-user, rest-campanhas, rest-campanhas-usuarios, re
 DELETE - para exclusão de cadastros
 Disponivel nos endpoints: rest-user, rest-campanhas, rest-campanhas-usuarios
 
-# Passo-a-passo para compilação e execução da aplicação
+## Passo-a-passo para compilação e execução da aplicação
 1) Instalar e/ou atualizar os frameworks e sistemas informados no itens Pre-requisitos
 
 2) Baixar o codigo fonte disponibilizado no Github
 
-3) Rodar o script mysql.sql na pasta src/main/resources para criar a base de dados e as tabelas.
+3) Rodar o script mysql.sql na pasta src/main/resources para criar a base de dados e as tabelas.  
 WARNING: atualizar o arquivo application.properties da pasta src/main/resouser antes de rodar o script!
 
 4) Executar o comando para realizar o build da aplicação: gradle build
 
 5) Executar o comando para executar a aplicação: java -jar build/libs/rest-cad-usuarios-campanhas-1.0.0.jar
 
-# O que falta fazer (TODO)
+## O que falta fazer (TODO)
 - Criar uma melhor maneira para a consulta dos cadastros
 - Implementar casos de teste
 - Implementar tratamento de exceções e logs
