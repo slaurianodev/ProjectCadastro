@@ -2,11 +2,11 @@
 API para cadastro de usuarios e campanhas
 
 # Pre-requisitos
-JDK 1.8
-MySQL 5.5+
-Spring Boot 1.5.3
-Gradle 2.3+
-Maven 3.0+
+* JDK 1.8
+* MySQL 5.5+
+* Spring Boot 1.5.3
+* Gradle 2.3+
+* Maven 3.0+
 
 # Estrutura do Projeto
 O Projeto está estruturado para prover uma API para o controle de cadastro (CRUD) de usuarios e campanhas.
