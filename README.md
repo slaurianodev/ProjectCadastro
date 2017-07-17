@@ -1,7 +1,10 @@
 # ProjectCadastro
 API para cadastro de usuarios e campanhas
 
+[Pre-requisitos](#pre-requisitos)
 [Estrutura do Projeto](#estrutura-do-projeto)
+[Passo-a-passo](#passo-a-passo)
+[O que falta](#o-que-falta)
 
 ## Pre-requisitos
 * JDK 1.8
